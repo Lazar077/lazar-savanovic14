@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <title>Prva animacija</title>
+    <style>
+        @keyframes prva-animacija {
+            from {
+                /* početno stanje */
+                width: 10px;
+                height: 10px;
+                background-color: red;
+            }
+            to {
+                /* krajnje stanje */
+                width: 400px;
+                height: 50px;
+                background-color: green;
+            }
+        }
+
+        #element {
+            display: inline-block;
+            border: 1px solid black;
+            box-sizing: border-box;
+
+            animation: prva-animacija 2s alternate 3 forwards;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="element"></div>
+
+</body>
+</html>
