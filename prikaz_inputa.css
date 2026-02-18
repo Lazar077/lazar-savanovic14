@@ -1,0 +1,52 @@
+.animirani-input {
+    display: block;
+    box-sizing: border-box;
+    padding: 5px;
+    margin-bottom: 5px;
+    border: 1px solid red;
+
+    animation: prikaz-inputa 2s forwards;
+}
+
+@keyframes prikaz-inputa {
+
+    0% {
+        width: 0px;
+        height: 0px;
+    }
+
+    20% {
+        width: 20px;
+        height: 20px;
+        background-color: red;
+        border-radius: 20px;
+    }
+
+    30% { 
+        width: 100px;
+        height: 10px;
+        background-color: white; 
+        border-radius: 10px;
+    }
+
+    60% {
+        width: 150px;
+        height: 30px;
+        background-color: white;
+        border-radius: 0px;
+    }
+
+    80% {
+        width: 170px;
+        height: 30px;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+    100% {
+        width: 220px;
+        height: 30px;
+        background-color: white;
+        border-radius: 10px;
+    }
+}
